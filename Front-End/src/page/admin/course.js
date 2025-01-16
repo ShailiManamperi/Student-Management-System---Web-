@@ -121,7 +121,7 @@ const Invoice = () => {
     return (
         <div>
             <Navbar />
-            <div className="yks-invoice-page">
+            <div className="yks-course-page">
                 <nav>
                     <p className="yks-profile-breadcrumb">
                         <span className="home">Home</span> /
@@ -131,8 +131,8 @@ const Invoice = () => {
                 <div className="yks-head">
                     <h1>Courses</h1>
                 </div>
-                <div className="yks-invoice-box">
-                    <div className="yks-invoice-form">
+                <div className="yks-course-box">
+                    <div className="yks-course-form">
                         <div className="yks-form-group">
                             <label htmlFor="courseID">Course ID</label>
                             <input
@@ -194,8 +194,8 @@ const Invoice = () => {
                 <div className="yks-head">
                     <h1>All Courses</h1>
                 </div>
-                <div className="yks-admin-invoice-table-container mt-1">
-                    <table className="table table-bordered yks-admin-invoice-table">
+                <div className="yks-admin-course-table-container mt-1">
+                    <table className="table table-bordered yks-admin-course-table">
                         <thead>
                         <tr>
                             <th>Course ID</th>
