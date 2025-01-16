@@ -1,0 +1,311 @@
+/*.yks-course-container{*/
+/*    min-height: 100vh;*/
+/*}*/
+/*.yks-course-container .yks-sidebar-container {*/
+/*    width: 230px; !* Default width for larger screens *!*/
+/*    flex-shrink: 0; !* Optional: Sidebar background color *!*/
+/*}*/
+
+/*.yks-course-container .yks-content-container {*/
+/*    padding: 20px;*/
+/*    flex-grow: 1;*/
+/*}*/
+
+/*.yks-course-container .yks-content-container .yks-profile-breadcrumb {*/
+/*    font-size: 18px;*/
+/*    font-weight: 100;*/
+/*    margin: 50px 0 0 50px;*/
+/*    font-family: 'Arial', sans-serif;*/
+/*}*/
+
+/*!* Style for breadcrumb items *!*/
+/*.yks-course-container .yks-content-container span.home {*/
+/*    color: black;*/
+/*}*/
+/*.yks-course-container .yks-content-container span.contact {*/
+/*    color: #24757E;*/
+/*}*/
+/*.yks-course-container .yks-card-container-height {*/
+/*    min-height: 600px;*/
+/*}*/
+/*!*.yks-course-container .yks-card-container-height .card-body .yks-head h1 {*!*/
+/*!*    max-width: 100%;*!*/
+/*!*    color: #24757E;*!*/
+/*!*}*!*/
+
+/*.yks-course-container .yks-invoice-box {*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    flex-grow: 1;*/
+/*    overflow-y: auto;*/
+/*    background-color: #f8f9fa;*/
+/*    margin: 10px;*/
+/*    border-radius: 12px;*/
+/*    overflow-x: auto; !* Allow horizontal scrolling when necessary *!*/
+/*}*/
+/*.yks-course-container .yks-invoice-form {*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    gap: 25px;*/
+/*    flex-wrap: wrap;*/
+/*    !* Allows wrapping if needed on small screens *!*/
+/*    margin: 10px 40px 10px 40px;*/
+
+/*}*/
+
+/* General Styling */
+.yks-invoice-page {
+    padding: 18px;
+    border-radius: 8px;
+    margin: 10px;
+    color: #4c7476;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.yks-invoice-page .yks-profile-breadcrumb {
+    font-size: 18px;
+    font-weight: 100;
+    margin-top: 50px;
+    margin-left: 250px;
+    margin-bottom: 8px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Style for 'Home' */
+.yks-invoice-page .yks-profile-breadcrumb span.home {
+    color: black;
+}
+
+/* Style for 'Contact' */
+.yks-invoice-page .yks-profile-breadcrumb span.contact {
+    color: #24757E;
+}
+
+.yks-invoice-page .yks-head h1 {
+    color: #24757E;
+    margin-bottom: 40px;
+    max-width: 100%;
+    font-size: 34px;
+    margin-left: 750px;
+}
+
+/* Invoice Box Styling */
+.yks-invoice-page .yks-invoice-box {
+    background-color: #f8f9fa;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 250px;
+    border-radius: 12px;
+}
+
+
+
+/* Invoice Form Layout */
+.yks-invoice-page .yks-invoice-form {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    flex-wrap: wrap;
+    /* Allows wrapping if needed on small screens */
+    margin: 10px 40px 10px 40px;
+
+}
+
+.yks-invoice-page .yks-form-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 22%;
+    /* Ensures equal width for form fields */
+}
+
+.yks-invoice-page .yks-form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.yks-invoice-page .yks-form-control {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f9fa;
+}
+
+/* Service Details Styling */
+.service-detail-section h5,
+.total-cost-section h5 {
+    margin-left: 280px;
+    font-size: 24px;
+    color: #000000;
+    /* Change this color to your preference */
+}
+
+.service-detail-section p {
+    margin-left: 280px;
+}
+
+/* Buttons */
+.yks-button-group {
+    display: flex;
+    gap: 20px;
+    justify-content: left;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.yks-invoice-page .yks-view-btn {
+    width: 150px;
+    color: white;
+    background-color: #24757E;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 280px;
+
+}
+
+.yks-invoice-page .yks-save-btn {
+    width: 150px;
+    color: white;
+    background-color: #24757E;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 280px;
+}
+
+.yks-invoice-page .yks-all-btn {
+    width: 150px;
+    color: white;
+    background-color: #24757E;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.yks-view-btn:hover,
+.yks-all-btn:hover,
+.yks-save-btn:hover {
+    background-color: #4e8585;
+}
+
+
+@media (max-width: 768px) {
+    .yks-invoice-page .yks-invoice-box {
+        margin-left: 0%;
+    }
+
+    .yks-head .text-center {
+        margin-left: 7%;
+    }
+
+
+    .service-detail-section h5,
+    .total-cost-section h5 {
+        margin-left: 7%;
+        font-size: 24px;
+
+    }
+
+    .yks-invoice-page .yks-view-btn {
+        margin-left: 7%;
+    }
+
+    .yks-invoice-page .yks-save-btn {
+        margin-left: 7%;
+    }
+
+    .service-detail-section p {
+        margin-left: 7%;
+    }
+}
+
+
+@media (max-width: 780px) {
+    .yks-invoice-page .yks-profile-breadcrumb {
+        display: none;
+    }
+    .yks-invoice-page .yks-head h1 {
+        padding-top: 80px;
+        margin-bottom: 30px;
+        margin-left: 90px;
+        font-size: calc(1.375rem + 1.5vw);
+        font-weight: bold !important;
+    }
+    .yks-invoice-page .yks-invoice-box{
+        margin-left: 10px;
+    }
+    .service-detail-section h5,
+    .total-cost-section h5{
+        margin-left: 10px;
+    }
+    .service-detail-section p{
+        margin-left: 10px;
+    }
+    .yks-invoice-page .yks-view-btn ,
+    .yks-invoice-page .yks-save-btn{
+        margin-left: 10px;
+    }
+}
+.yks-admin-invoice-table-container {
+    flex-grow: 1;
+    max-height: 250px;
+    overflow-y: auto;
+    background-color: #ffffff;
+    margin: 10px;
+    font-size: 12px;
+    border-radius: 10px;
+    overflow-x: auto; /* Allow horizontal scrolling when necessary */
+}
+
+.yks-admin-invoice-table {
+    margin-left: 18%;
+    width: 80%;
+    border-collapse: collapse;
+    font-size: 14px; /* Adjust font size for readability */
+    border: 1px solid #8c8c8c33;
+    border-radius: 10px;
+    overflow-x: auto;
+}
+.yks-admin-invoice-table th,
+.yks-admin-invoice-table td {
+    border: 1px solid #ddd;
+    text-align: center; /* Center-align text for all cells */
+}
+
+.yks-admin-invoice-table th {
+    background-color: #f8f9fa;
+    color: #000000;
+    font-weight: bold;
+}
+.yks-admin-invoice-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+.yks-admin-invoice-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+/* Scrollbar styling */
+tbody::-webkit-scrollbar {
+    width: 1px;
+}
+tbody::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 4px;
+}
+tbody::-webkit-scrollbar-thumb:hover {
+    background-color: #888;
+}
+.yks-delete-btn{
+    padding: 4px 10px;
+    color: white;
+    background-color: #E46B6B;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
