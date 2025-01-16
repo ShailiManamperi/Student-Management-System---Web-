@@ -1,58 +1,3 @@
-/*.yks-course-container{*/
-/*    min-height: 100vh;*/
-/*}*/
-/*.yks-course-container .yks-sidebar-container {*/
-/*    width: 230px; !* Default width for larger screens *!*/
-/*    flex-shrink: 0; !* Optional: Sidebar background color *!*/
-/*}*/
-
-/*.yks-course-container .yks-content-container {*/
-/*    padding: 20px;*/
-/*    flex-grow: 1;*/
-/*}*/
-
-/*.yks-course-container .yks-content-container .yks-profile-breadcrumb {*/
-/*    font-size: 18px;*/
-/*    font-weight: 100;*/
-/*    margin: 50px 0 0 50px;*/
-/*    font-family: 'Arial', sans-serif;*/
-/*}*/
-
-/*!* Style for breadcrumb items *!*/
-/*.yks-course-container .yks-content-container span.home {*/
-/*    color: black;*/
-/*}*/
-/*.yks-course-container .yks-content-container span.contact {*/
-/*    color: #24757E;*/
-/*}*/
-/*.yks-course-container .yks-card-container-height {*/
-/*    min-height: 600px;*/
-/*}*/
-/*!*.yks-course-container .yks-card-container-height .card-body .yks-head h1 {*!*/
-/*!*    max-width: 100%;*!*/
-/*!*    color: #24757E;*!*/
-/*!*}*!*/
-
-/*.yks-course-container .yks-invoice-box {*/
-/*    justify-content: center;*/
-/*    align-items: center;*/
-/*    flex-grow: 1;*/
-/*    overflow-y: auto;*/
-/*    background-color: #f8f9fa;*/
-/*    margin: 10px;*/
-/*    border-radius: 12px;*/
-/*    overflow-x: auto; !* Allow horizontal scrolling when necessary *!*/
-/*}*/
-/*.yks-course-container .yks-invoice-form {*/
-/*    display: flex;*/
-/*    justify-content: space-between;*/
-/*    gap: 25px;*/
-/*    flex-wrap: wrap;*/
-/*    !* Allows wrapping if needed on small screens *!*/
-/*    margin: 10px 40px 10px 40px;*/
-
-/*}*/
-
 /* General Styling */
 .yks-invoice-page {
     padding: 18px;
@@ -168,7 +113,8 @@
 
 }
 
-.yks-invoice-page .yks-save-btn {
+.yks-invoice-page .yks-save-btn,
+.yks-invoice-page .yks-update-btn {
     width: 150px;
     color: white;
     background-color: #24757E;
@@ -176,6 +122,9 @@
     border: none;
     border-radius: 4px;
     cursor: pointer;
+
+}
+.yks-invoice-page .yks-save-btn {
     margin-left: 280px;
 }
 
